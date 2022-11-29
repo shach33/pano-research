@@ -1,0 +1,34 @@
+Install dnslib
+
+pip3 install dnslib
+
+
+Run 
+
+sudo python3 get_dns.py
+
+
+Open another terminal, Run dig
+
+dig @1.1.1.1 cricbuzz.com
+
+
+Expected response: 
+
+[Query] Process=dig src=9.109.124.153 dst=1.1.1.1 S_port=43461 D_port=53 Name=cricbuzz.com. Query_type=A
+<__main__.c_ubyte_Array_96 object at 0x7f71ab112740>
+
+=========================
+^lEQ/@  m|5=Vn$cricbuzzcom)
+
+>~(Z
+=========================
+[Response] Process=dig src=1.1.1.1 dst=9.109.124.153 S_port=53 D_port=43461 Name=cricbuzz.com. Query_type=A Query_data=35.200.167.142
+<__main__.c_ubyte_Array_104 object at 0x7f71ab112740>
+
+=========================
+lq8EhU9@3       m|5Ancricbuzzcom
+                                m#ȧ)
+=========================
+
+Text within ===== are the raw bytes in the packet. 
